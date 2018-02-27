@@ -5,10 +5,12 @@
 }
 button {
   background-color: #15c1d8;
+  border-color: #b7bace;
 }
 .container{
   background-color: #edac34;
 }
 h2 {
   font-style: italic;
+  border: solid;
 }
