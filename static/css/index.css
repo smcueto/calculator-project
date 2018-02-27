@@ -1,1 +1,14 @@
 /*/Users/smcueto/Documents/GitHub-Projects/calculator-code/static/css/index.css */
+.row  {
+  border: solid;
+  text-align: center;
+}
+button {
+  background-color: #15c1d8;
+}
+.container{
+  background-color: #edac34;
+}
+h2 {
+  font-style: italic;
+}
