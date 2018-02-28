@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- bootstap link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!--css link -->
     <link rel="stylesheet" href="/Users/smcueto/Documents/GitHub-Projects/calculator-code/static/css/index.css">
-    <meta charset="utf-8">
     <title>My First Calculator</title>
-  </head>
+    <meta charset="utf-8">
+    </head>
   <body>
-    <div class="container-fluid">
-    </div>
-    <div class="container">
-      <div class="row">
-          <h1>Answer</h1>
-            <br>
-        <form class="topAnwser" action="index.html" method="post">
-          <input type="text" name="answer" value="">
-        </form>
-            <br>
-      </div>
-      <div class="row" >
-        <div class="col-xs-12 col-md-6 col-lg-6">
-          <h2>Numbers</h2>
+    <div id="cal-contain">
+      <h1>Calculator</h1>
+        <form name="calculator" class="answer-box" >
+          <input type="text"  name="answer" />
           <br>
-          <button type="button" name="button">0</button>
-          <button type="button" name="button">1</button>
-          <button type="button" name="button">2</button>
-          <button type="button" name="button">3</button>
-          <button type="button" name="button">4</button>
-          <br>
-          <button type="button" name="button">5</button>
-          <button type="button" name="button">6</button>
-          <button type="button" name="button">7</button>
-          <button type="button" name="button">8</buxtton>
-          <button type="button" name="button">9</button>
-          <br>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-6">
-          <h2>Operators</h2>
-          <br>
-          <button type="button" name="button">+</button>
-          <button type="button" name="button">-</button>
-          <button type="button" name="button">*</button>
-          <br>
-          <button type="button" name="button">/</button>
-          <button type="button" name="button">=</button>
-          <button type="button" name="button">CL</button>
-        </div>
-        <br>
-      </div>
 
+          <input type="button"value=" 1 " onclick="calculator.answer.value += '1'" />
+          <input type="button"value=" 2 " onclick="calculator.answer.value += '2'" />
+          <input type="button"value=" 3 " onclick="calculator.answer.value += '3'" />
+          <input type="button"value=" + " onclick="calculator.answer.value += '+'" />
+          <br>
+
+          <input type="button"value=" 4 " onclick="calculator.answer.value += '4'" />
+          <input type="button"value=" 5 " onclick="calculator.answer.value += '5'" />
+          <input type="button"value=" 6 " onclick="calculator.answer.value += '6'" />
+          <input type="button"value=" - " onclick="calculator.answer.value += '-'" />
+          <br>
+
+          <input type="button"value=" 7 " onclick="calculator.answer.value += '7'" />
+          <input type="button"value=" 8 " onclick="calculator.answer.value += '8'" />
+          <input type="button"value=" 9 " onclick="calculator.answer.value += '9'" />
+          <input type="button"value=" * " onclick="calculator.answer.value += '*'" />
+          <br>
+
+          <input type="button"value=" C " onclick="calculator.answer.value = ''" />
+          <input type="button"value=" 0 " onclick="calculator.answer.value += '0'" />
+          <input type="button"value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+          <input type="button"value=" / " onclick="calculator.answer.value += '/'" />
+          <br>
+
+        </form>
     </div>
+
   </body>
 </html>
