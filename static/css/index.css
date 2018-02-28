@@ -1,16 +1,33 @@
 /*/Users/smcueto/Documents/GitHub-Projects/calculator-code/static/css/index.css */
-.row  {
-  border: solid;
+body{
+
+  /* background-image: url(https://images.pexels.com/photos/185498/pexels-photo-185498.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb); */
+}
+
+#cal-contain{
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #7cc1bd;
+}
+h1{
+  font-style: italic;
   text-align: center;
 }
-button {
-  background-color: #15c1d8;
-  border-color: #b7bace;
+
+input[type=button]{
+  background-color: lightGray;
+  width: 20%;
+  font-style: oblique;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 2%;
+  border-radius: 4px;
 }
-.container{
-  background-color: #edac34;
-}
-h2 {
-  font-style: italic;
-  border: solid;
+input[type=text]{
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  font-size: 20px;
 }
